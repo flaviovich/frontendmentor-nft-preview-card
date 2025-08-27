@@ -1,0 +1,27 @@
+:root {
+  /* Primary */
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+  /* Neutral */
+  --blue-950: hsl(217, 54%, 11%);
+  --blue-900: hsl(216, 50%, 16%);
+  --blue-800: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--blue-950);
+}
+
+.card {
+  background-color: var(--blue-900);
+}
+.card-top-image{
+  width: 100%;
+}
+.card-title{
+  color: var(--white);
+}
+.card-description{
+  color: var(--blue-500);
+}
