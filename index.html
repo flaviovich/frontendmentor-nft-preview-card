@@ -33,21 +33,31 @@
 <body>
   <main class="container">
     <div class="card">
-      <img class="card-top-image" src="./assets/images/image-equilibrium.jpg" alt="">
+      <div class="image-container">
+        <img class="card-top-image" src="./assets/images/image-equilibrium.jpg" alt="">
+        <div class="top-image-overlay">
+          <img src="./assets/images/icon-view.svg" alt="">
+        </div>
+      </div>
       <div class="card-body">
         <h3 class="card-title">Equilibrium #3429</h3>
         <p class="card-description">
           Our Equilibrium collection promotes balance and calm.</p>
         <div class="card-details">
-          <img class="price-icon" src="./assets/images/icon-ethereum.svg" alt="">
-          <div class="card-price">0.041 ETH</div>
-          <img class="time-icon" src="./assets/images/icon-clock.svg" alt="">
-          <div class="card-time">3 days left</div>
+          <div class="nft-price">
+            <img class="price-icon" src="./assets/images/icon-ethereum.svg" alt="">
+            <span class="card-price">0.041 ETH</span>
+          </div>
+          <div class="nft-time">
+            <img class="time-icon" src="./assets/images/icon-clock.svg" alt="">
+            <span class="card-time">3 days left</span>
+          </div>
         </div>
       </div>
+      <hr>
       <div class="card-footer">
         <img class="card-avatar" src="./assets/images/image-avatar.png" alt="">
-        Creation of Jules Wyvern
+        <span class="nft-creator-label">Creation of</span>&nbsp;<a href="#" class="nft-creator-name">Jules Wyvern</a>
       </div>
     </div>
   </main>
