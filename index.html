@@ -31,36 +31,39 @@
 </head>
 
 <body>
-  <main class="container">
-    <div class="card">
-      <div class="image-container">
-        <img class="card-top-image" src="./assets/images/image-equilibrium.jpg" alt="">
-        <div class="top-image-overlay">
-          <img src="./assets/images/icon-view.svg" alt="">
+  <section class="container">
+    <article class="card">
+      <header class="card-header">
+        <img class="card-top-image" src="./assets/images/image-equilibrium.jpg"
+          alt="Equilibrium NFT artwork featuring a balanced geometric design">
+        <div class="top-image-overlay" aria-hidden="true">
+          <img src="./assets/images/icon-view.svg" type="image/svg+xml" loading="lazy">
         </div>
-      </div>
+      </header>
       <div class="card-body">
         <h3 class="card-title">Equilibrium #3429</h3>
         <p class="card-description">
           Our Equilibrium collection promotes balance and calm.</p>
-        <div class="card-details">
+        <div class="card-details" role="group" aria-label="NFT details">
           <div class="nft-price">
-            <img class="price-icon" src="./assets/images/icon-ethereum.svg" alt="">
+            <img class="price-icon" src="./assets/images/icon-ethereum.svg" type="image/svg+xml" loading="lazy">
             <span class="card-price">0.041 ETH</span>
           </div>
           <div class="nft-time">
-            <img class="time-icon" src="./assets/images/icon-clock.svg" alt="">
+            <img class="time-icon" src="./assets/images/icon-clock.svg" alt="" type="image/svg+xml" loading="lazy">
             <span class="card-time">3 days left</span>
           </div>
         </div>
       </div>
-      <hr>
-      <div class="card-footer">
-        <img class="card-avatar" src="./assets/images/image-avatar.png" alt="">
-        <span class="nft-creator-label">Creation of</span>&nbsp;<a href="#" class="nft-creator-name">Jules Wyvern</a>
-      </div>
-    </div>
-  </main>
+      <hr class="card-divider" role="separator" aria-hidden="true">
+      <footer class="card-footer">
+        <img class="card-avatar" src="./assets/images/image-avatar.png" alt="Jules Wyvern profile picture"
+          loading="lazy">
+        <span class="nft-creator-label">Creation of</span>&nbsp;<a href="#creator-profile" class="nft-creator-name"
+          rel="author" aria-label="View Jules Wyvern's profile">Jules Wyvern</a>
+      </footer>
+    </article>
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.linkedin.com/in/flavio-rios-nieto/">Flavio Rios</a>.

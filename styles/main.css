@@ -3,7 +3,7 @@
   --font-system: Roboto;
   --font-primary: 'Outfit', var(--font-system), sans-serif;
   --font-primary-size: 18px;
-  --font-title-size: 24px;
+  --font-title-size: clamp(1.25rem, 4vw, 1.5rem);
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
@@ -24,6 +24,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -42,10 +43,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
+  padding-bottom: var(--spacing-2xl);
 }
 
 .container {
   padding: var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
 }
 
 .card {
@@ -56,10 +61,11 @@ body {
   min-width: 300px;
 }
 
-.image-container {
+.card-header {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .top-image-overlay {
@@ -84,13 +90,16 @@ body {
   height: 60px;
 }
 
-.image-container:hover .top-image-overlay {
+.card-header:hover .top-image-overlay {
   opacity: .5;
 }
 
 .card-top-image {
   width: 100%;
+  height: auto;
   display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: var(--spacing-sm);
 }
 
@@ -143,7 +152,7 @@ body {
   font-weight: var(--font-weight-regular);
 }
 
-hr {
+.card-divider {
   border: none;
   height: 1px;
   background-color: var(--blue-800);
@@ -163,16 +172,19 @@ hr {
 .card-avatar {
   border-radius: 50%;
   border: 1px solid var(--white);
-  width: 40px;
+  width: 2.5rem;
+  height: auto;
   margin-right: var(--spacing-xl);
 }
 
 .nft-creator-label {
   color: var(--blue-500);
+  font-weight: var(--font-weight-regular);
 }
 
 .nft-creator-name {
   color: var(--white);
+  font-weight: var(--font-weight-regular);
   text-decoration: none;
 }
 
@@ -180,11 +192,37 @@ hr {
   color: var(--cyan-400);
 }
 
-.nft-creator-label,
-.nft-creator-name {
-  font-weight: var(--font-weight-regular);
+.nft-creator-name:focus-visible {
+  outline: 2px dashed var(--cyan-400);
+  outline-offset: 2px;
 }
 
 .attribution {
   color: white;
+}
+
+@media (width>640px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --blue-950: hsl(0, 0%, 95%);
+    --blue-900: hsl(0, 0%, 100%);
+    --blue-800: hsl(0, 0%, 85%);
+    --blue-500: hsl(215, 51%, 40%);
+    --white: hsl(217, 54%, 11%);
+  }
+
+  .card {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  }
+
+  .attribution {
+    color: black;
+  }
 }
