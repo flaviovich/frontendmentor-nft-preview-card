@@ -1,0 +1,25 @@
+{
+  "name": "nft-preview-card-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviovich/frontendmentor-nft-preview-card.git"
+  },
+  "keywords": [],
+  "author": "Flavio Rios",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/flaviovich/frontendmentor-nft-preview-card/issues"
+  },
+  "homepage": "https://github.com/flaviovich/frontendmentor-nft-preview-card#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
