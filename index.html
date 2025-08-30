@@ -30,53 +30,57 @@
   </style>
 </head>
 
-<body
-  class="bg-[hsl(217,54%,11%)] font-[Outfit,Roboto,_sans-serif] text-lg flex flex-col justify-center items-center min-h-dvh pb-6">
+<body class="bg-blue950 text-lg flex flex-col justify-center items-center min-h-dvh pb-6">
   <!-- container -->
-  <section class="p-6 flex flex-col gap-4">
+  <section class="p-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
     <!-- card -->
-    <article class="bg-[hsl(216,50%,16%)] p-6 rounded-2xl max-w-[400px] min-w-[300px]">
+    <article class="bg-blue900 p-6 rounded-2xl max-w-[400px] min-w-[300px]">
       <!-- card-header -->
-      <header class="">
+      <header class="group relative inline-block cursor-pointer overflow-hidden">
         <img class="w-full h-auto block aspect-square object-cover rounded-lg"
           src="./assets/images/image-equilibrium.jpg"
           alt="Equilibrium NFT artwork featuring a balanced geometric design">
+        <!-- overlay -->
+        <div
+          class="absolute inset-0 bg-cyan400 flex justify-center items-center opacity-0 transition-opacity duration-300 ease-in-out rounded-lg group-hover:opacity-50"
+          aria-hidden="true">
+          <img class="w-16 h-16" alt="" src="./assets/images/icon-view.svg" loading="lazy">
+        </div>
       </header>
       <!-- card-body -->
       <div class="">
         <h2
-          class="text-white text-[clamp(1.25rem,4vw,1.5rem)] font-semibold hover:text-[hsl(178,100%,50%)] cursor-pointer">
-          Equilibrium
-          #3429</h2>
-        <p class="text-[hsl(215,51%,70%)] font-light leading-normal">Our Equilibrium collection promotes balance and
+          class="text-white text-[clamp(1.25rem,4vw,1.5rem)] font-semibold hover:text-cyan400 cursor-pointer mt-6 mb-5">
+          Equilibrium #3429</h2>
+        <p class="text-blue500 font-light leading-normal mb-5">Our Equilibrium collection promotes balance
+          and
           calm.</p>
         <div class="flex justify-between" role="group" aria-label="NFT details">
           <div class="flex items-center gap-2">
-            <img class="w-3 h-auto" src="./assets/images/icon-ethereum.svg" type="image/svg+xml" loading="lazy">
-            <span class="text-[hsl(178,100%,50%)] font-semibold">0.041 ETH</span>
+            <img class="w-3 h-auto" src="./assets/images/icon-ethereum.svg" loading="lazy">
+            <span class="text-cyan400 font-semibold">0.041 ETH</span>
           </div>
           <div class="flex items-center gap-2">
-            <img class="w-5 h-auto" src="./assets/images/icon-clock.svg" alt="" type="image/svg+xml" loading="lazy">
-            <span class="text-[hsl(215,51%,70%)] font-normal">3 days left</span>
+            <img class="w-5 h-auto" src="./assets/images/icon-clock.svg" alt="" loading="lazy">
+            <span class="text-blue500 font-normal">3 days left</span>
           </div>
         </div>
       </div>
-      <hr class="border-none h-px bg-[hsl(215,32%,27%)] mt-6 mb-4" role="separator" aria-hidden="true">
+      <hr class="border-none h-px bg-blue800 my-4" role="separator" aria-hidden="true">
       <!-- card-footer -->
       <footer class="flex items-center">
         <img class="rounded-full border border-white w-10 h-auto mr-5" src="./assets/images/image-avatar.png"
           alt="Jules Wyvern profile picture" loading="lazy">
-        <span class="text-[hsl(215,51%,70%)] font-normal">Creation of</span>&nbsp;<a href="#creator-profile"
-          class="text-white font-normal no-underline hover:text-[hsl(178,100%,50%)] focus-visible:outline-2 focus-visible:outline-dashed focus-visible:outline-[hsl(178,100%,50%)] focus-visible:outline-offset-2"
+        <span class="text-blue500 font-normal">Creation of</span>&nbsp;<a href="#creator-profile"
+          class="text-white font-normal no-underline transition-colors duration-200 hover:text-cyan400 focus-visible-ring"
           rel="author" aria-label="View Jules Wyvern's profile">Jules Wyvern</a>
       </footer>
     </article>
   </section>
 
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/flavio-rios-nieto/">Flavio Rios</a>.
   </div>
 </body>
 
